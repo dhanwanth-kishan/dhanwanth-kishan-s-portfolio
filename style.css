@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --accent-color: #06b6d4;
+    --dark-bg: #0f172a;
+    --descr-bg:#090e18;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+
+    --text-secondary: #94a3b8;
+    --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+}
+
+.brand {
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--dark-bg);
+    height: 100vh;
+    font-family: sans-serif;
+    
+}
+
+.dark-bg {
+    background-color: var(--dark-bg);
+}
+
+.nav-item>a {
+    color: var(--text-secondary);
+    transition: transform 0.1s ease-in-out;
+
+}
+
+.nav-item>a:hover {
+    color: var(--text-primary);
+    transform: scale(1.1);
+
+}
+
+.h-name {
+    background: var(--gradient-1);
+    /* for gradient color use the following */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero {
+    color: var(--text-secondary);
+}
+
+.btn-color {
+    background-color: var(--secondary-color);
+
+}
+
+.btn-color:hover {
+    color: white;
+    box-shadow: 1px 4px 8px white;
+    background-color: var(--secondary-color);
+}
+
+.abt {
+    background: var(--gradient-1);
+    /* for gradient color use the following */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bt {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.bt-hov2:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.abt-p {
+    color: var(--text-secondary);
+}
+
+.descr {
+    transition: transform 0.1s ease;
+    background:rgba(255,255,255,0.05);
+    border: 1px solid var(--card-bg);
+    width: 550px;
+
+
+
+}
+
+.descr:hover {
+    transform: scale(1.01);
+    background-color: var(--card-bg);
+
+    box-shadow: 10px 10px 10px black;
+
+
+}
+
+.i {
+    margin-top: 40px;
+   
+
+    color: #6366f1;
+}
+
+.c {
+    height: 270px;
+    border-radius:50% ;
+
+}
+
+.card-col {
+    color: white;
+    transition: transform ease-in-out 0.15s;
+background:rgba(255,255,255,0.05);
+}
+
+.card-col:hover {
+    
+    background-color: var(--card-bg);
+    transform: scale(1.03);
+    box-shadow: 10px 10px 10px black;
+
+}
+.skill-bar {
+  background-color: #1e293b;
+  color: #ffff; /* light gray background */
+  border-radius: 12px;
+  overflow: hidden;
+  height: 7px;
+  margin-top: 5px;
+}
+.t{
+   color: var(--text-secondary);
+}
+.imgg{
+   
+    width: 300px;
+    height: 250px;
+    margin-left: 35px;
+}
+.mtop{
+    margin-top: 150px;
+}
+
+.skill-level {
+  background:#6366f1; /* static violet color */
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  width: 80%; /* adjust this for skill level */
+  transition: width 0.3s ease-in-out;
+}
